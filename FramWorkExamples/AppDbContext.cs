@@ -10,6 +10,9 @@ namespace FramWorkExamples
     public class AppDbContext : DbContext
     {
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderLines> OrderLines { get; set; }
+        
         
         public AppDbContext() { } //default constructor
 
